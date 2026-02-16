@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meenakshi Medico Hospital</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<nav>
+<h2>Medico</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#doctors">Doctors</a></li>
+<li><a href="#appointment">Appointment</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="home">
+<div>
+<h1>Welcome to  Meenakshi Medico Hospital</h1>
+<p>Your Health is Our Priority</p>
+<a href="#appointment" class="btn">Book Appointment</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+
+<div class="about-wrapper">
+
+<div class="about-left">
+<h2>Compassionate Care. Advanced Medicine.</h2>
+
+<p class="about-sub">
+At Medico Hospital, we combine medical excellence with genuine care.
+Our expert doctors and modern facilities ensure the best treatment
+for every patient.
+</p>
+
+<div class="about-features">
+<div class="feature">
+<span>🩺</span>
+<div>
+<h4>Expert Doctors</h4>
+<p>Highly qualified specialists with years of experience.</p>
+</div>
+</div>
+
+<div class="feature">
+<span>🏥</span>
+<div>
+<h4>Modern Infrastructure</h4>
+<p>Advanced equipment and digital healthcare systems.</p>
+</div>
+</div>
+
+<div class="feature">
+<span>❤️</span>
+<div>
+<h4>Patient First Approach</h4>
+<p>We prioritize comfort, safety and quality care.</p>
+</div>
+</div>
+</div>
+
+<a href="#appointment" class="about-btn">Book Appointment</a>
+
+</div>
+
+<div class="about-right">
+<div class="image-card">
+<img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3" alt="Hospital">
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="fade">
+<h2>Our Services</h2>
+<div class="container">
+<div class="card">
+<img src="https://www.bing.com/th/id/OIP.4Wiwuo4YQiY6Zn2UdmEZaQHaFW?w=228&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+<h3>Cardiology</h3>
+<p>Advanced heart care treatment.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1584515933487-779824d29309">
+<h3>Neurology</h3>
+<p>Brain specialist treatment.</p>
+</div>
+<div class="card">
+<img src="https://www.bing.com/th/id/OIP.CQ76JHjLvo1NpVsyZBVzpgHaE8?w=231&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+<h3>Orthopedics</h3>
+<p>Bone and joint treatment.</p>
+</div>
+</div>
+</section>
+
+<!-- DOCTORS -->
+<section id="doctors" class="fade">
+<h2>Our Doctors</h2>
+<div class="container">
+<div class="card">
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+<h3>Dr. John</h3>
+<p>Cardiologist</p>
+</div>
+<div class="card">
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+<h3>Dr. Anna</h3>
+<p>Neurologist</p>
+</div>
+<div class="card">
+<img src="https://randomuser.me/api/portraits/men/12.jpg">
+<h3>Dr. Smith</h3>
+<p>Orthopedic</p>
+</div>
+</div>
+</section>
+
+<!-- APPOINTMENT -->
+<section id="appointment" class="appointment-section fade">
+
+<h2 class="section-title">Book & Track Appointment</h2>
+
+<div class="appointment-wrapper">
+
+<!-- LEFT SIDE - BOOK -->
+<div class="appointment-form">
+<h3>Book Appointment</h3>
+
+<form id="appointmentForm">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Email" required>
+<input type="date" id="date" required>
+<textarea id="message" placeholder="Message"></textarea>
+<button type="submit">Submit</button>
+</form>
+
+<p id="successMsg"></p>
+</div>
+
+
+<!-- RIGHT SIDE - STATUS -->
+<div class="status-box">
+
+<h3>Check Appointment Status</h3>
+
+<div class="status-card">
+
+<input type="text" id="checkId" placeholder="Enter Appointment ID">
+<button onclick="checkStatus()">Check Status</button>
+
+<div id="statusResult" class="status-result">
+<p>Enter your appointment ID to see status.</p>
+</div>
+
+</div>
+
+<div class="status-info">
+<h4>ℹ How It Works?</h4>
+<ul>
+<li>After booking, you receive an Appointment ID.</li>
+<li>Use that ID to track your appointment status.</li>
+<li>Status may be: Pending / Approved / Completed.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section fade">
+
+<h2 class="section-title">Get In Touch</h2>
+
+<div class="contact-wrapper">
+
+<!-- LEFT SIDE - CONTACT INFO -->
+<div class="contact-info">
+
+<div class="info-box">
+<span>📍</span>
+<div>
+<h4>Our Location</h4>
+<p>123 Medical Street,<br>Thanjavur, Tamil Nadu</p>
+</div>
+</div>
+
+<div class="info-box">
+<span>📞</span>
+<div>
+<h4>Call Us</h4>
+<p>+91 98765 43210</p>
+</div>
+</div>
+
+<div class="info-box">
+<span>📧</span>
+<div>
+<h4>Email Us</h4>
+<p>info@medico.com</p>
+</div>
+</div>
+
+<div class="social-icons">
+<a href="#">🌐</a>
+<a href="#">📘</a>
+<a href="#">📸</a>
+<a href="#">🐦</a>
+</div>
+
+</div>
+
+<!-- RIGHT SIDE - CONTACT FORM -->
+<div class="contact-form">
+
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<input type="text" placeholder="Subject">
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+</div>
+
+</div>
+
+<!-- GOOGLE MAP -->
+<div class="map-container">
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.523587184851!2d79.1378!3d10.786999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a556bd2b4f7e3ef%3A0x1234567890abcdef!2sThanjavur%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1610000000000"
+width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+</iframe>
+</div>
+
+</section>
+
+<footer>
+© 2026 Medico Hospital | All Rights Reserved
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
